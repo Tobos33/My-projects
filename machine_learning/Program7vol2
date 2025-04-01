@@ -1,0 +1,4 @@
+import pickle
+with open('model.pickle', 'rb') as file:
+    model = pickle.load(file)
+#można tutaj przewidywać nowe projekty

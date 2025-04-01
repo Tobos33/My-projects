@@ -1,0 +1,13 @@
+from PIL import Image
+import numpy as np
+
+# Wczytaj obraz
+image_path = "C:/Users/pawko/OneDrive/Obrazy/wykres3.png"  # Podaj ścieżkę do obrazu
+image = Image.open(image_path)
+
+# Konwersja obrazu do numpy array
+image_array = np.array(image)
+
+# Wyświetlenie kształtu macierzy (np. wysokość, szerokość, liczba kanałów)
+print("Kształt macierzy:", image_array.shape)
+print(image_array)
